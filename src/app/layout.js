@@ -23,7 +23,6 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   const allDocuments = getDocuments();
-  console.log(allDocuments);
   return (
     <html lang="en">
       <body
@@ -33,7 +32,7 @@ export default function RootLayout({ children }) {
         <div className="flex min-h-screen">
           {/* sidebar */}
           <aside className="w-1/5 bg-red-100">
-<Sidebar/>
+<Sidebar docs={allDocuments}/>
           </aside>
 
           <main className="w-4/5 p-5 bg-white">
