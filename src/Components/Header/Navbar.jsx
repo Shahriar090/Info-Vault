@@ -1,6 +1,6 @@
 import SearchBar from './SearchBar'
 
-export default function Navbar() {
+export default function Navbar({docs}) {
   return (
     <nav className='w-full h-20 bg-purple-500 px-6 flex items-center justify-between'>
       {/* Logo */}
@@ -10,7 +10,7 @@ export default function Navbar() {
 
       {/* Search Bar */}
       <div className="flex-1 px-6">
-        <SearchBar />
+        <SearchBar docs={docs}/>
       </div>
 
       {/* Navigation Items */}

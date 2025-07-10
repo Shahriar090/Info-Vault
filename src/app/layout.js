@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Navbar/>
+        <Navbar docs={allDocuments}/>
         <div className="flex min-h-screen">
           {/* sidebar */}
           <aside className="w-1/5 bg-red-100">
